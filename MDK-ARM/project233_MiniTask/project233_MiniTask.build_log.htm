@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: don cao, bkr, LIC=VGXG8-3UI6Z-UHJ8H-WF8F7-8QH6C-M50J5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  D:\STM32\KeilC\Core\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\STM32\Project\project233_MiniTask\MDK-ARM\project233_MiniTask.uvprojx
+Project File Date:  06/30/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'D:\STM32\KeilC\Core\ARM\ARMCLANG\Bin'
+Build target 'project233_MiniTask'
+assembling startup_stm32f103xb.s...
+../Core/Src/main.c(92): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+                        PWMdutyChange(&htim1, TIM_CHANNEL_1, 0.05*abs(2000-(HAL_GetTick() - currentTime)));
+                                                                  ^
+../Core/Src/main.c(92): note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+../Core/Src/main.c(92): warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+                        PWMdutyChange(&htim1, TIM_CHANNEL_1, 0.05*abs(2000-(HAL_GetTick() - currentTime)));
+                                                                  ^
+../Core/Src/main.c(92): note: remove the call to 'abs' since unsigned values cannot be negative
+                        PWMdutyChange(&htim1, TIM_CHANNEL_1, 0.05*abs(2000-(HAL_GetTick() - currentTime)));
+                                                                  ^~~
+2 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=6112 RO-data=284 RW-data=12 ZI-data=1748  
+FromELF: creating hex file...
+"project233_MiniTask\project233_MiniTask.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_project233_MiniTask
+  D:\STM32\KeilC\Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\STM32\KeilC\Pack\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

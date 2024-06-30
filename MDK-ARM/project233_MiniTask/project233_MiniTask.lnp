@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"project233_minitask\startup_stm32f103xb.o"
+"project233_minitask\main.o"
+"project233_minitask\stm32f1xx_it.o"
+"project233_minitask\stm32f1xx_hal_msp.o"
+"project233_minitask\stm32f1xx_hal_gpio_ex.o"
+"project233_minitask\stm32f1xx_hal_tim.o"
+"project233_minitask\stm32f1xx_hal_tim_ex.o"
+"project233_minitask\stm32f1xx_hal.o"
+"project233_minitask\stm32f1xx_hal_rcc.o"
+"project233_minitask\stm32f1xx_hal_rcc_ex.o"
+"project233_minitask\stm32f1xx_hal_gpio.o"
+"project233_minitask\stm32f1xx_hal_dma.o"
+"project233_minitask\stm32f1xx_hal_cortex.o"
+"project233_minitask\stm32f1xx_hal_pwr.o"
+"project233_minitask\stm32f1xx_hal_flash.o"
+"project233_minitask\stm32f1xx_hal_flash_ex.o"
+"project233_minitask\stm32f1xx_hal_exti.o"
+"project233_minitask\system_stm32f1xx.o"
+"project233_minitask\button.o"
+"project233_minitask\pwm.o"
+--strict --scatter "project233_MiniTask\project233_MiniTask.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "project233_MiniTask.map" -o project233_MiniTask\project233_MiniTask.axf
